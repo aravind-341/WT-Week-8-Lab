@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <h2>JavaScript Operators</h2>
+    <div id="out"></div>
+
+    <script>
+        let a = 15;
+        let b = 4;
+
+        let result = "";
+        result += "A value is = " + (a) + "<br>";
+        result += "B value is = " + (b) + "<br><br>";
+        result += "Addition = " + (a + b) + "<br>";
+        result += "Subtraction = " + (a - b) + "<br>";
+        result += "Multiplication = " + (a * b) + "<br>";
+        result += "Division = " + (a / b).toFixed(2) + "<br>";
+        result += "Remainder = " + (a % b) + "<br>";
+        result += "Power = " + (a ** b) + "<br><br>";
+        result += "a > b: " + (a > b) + "<br>";
+        result += "a == '15': " + (a == "15") + "<br>";
+        result += "Logical AND (a > 10 && b < 5): " + (a > 10 && b < 5);
+
+        document.getElementById("out").innerHTML = result;
+    </script>
+</body>
+</html>

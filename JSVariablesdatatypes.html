@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <div id="out"></div>
+
+    <script>
+        let name = "Aravind";
+        let age = 22;
+        let isStudent = true;
+        let marks = 85;
+        let address ;
+
+        let result = "";
+        result += "Name: " + name + "<br>";
+        result += "Age: " + age + "<br>";
+        result += "Student: " + isStudent + "<br>";
+        result += "Marks: " + marks + "<br>";
+        result += "Name type: " + typeof name + "<br>";
+        result += "Age type: " + typeof age + "<br>";
+        result += "Address type: " + typeof address;
+
+        document.getElementById("out").innerHTML = result;
+    </script>
+</body>
+</html>

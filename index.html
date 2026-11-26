@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT Week 8 Lab | JavaScript Programs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #102a43, #176b87);
+            color: white;
+            padding: 55px 8%;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            border: 1px solid rgba(255,255,255,.35);
+            border-radius: 20px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #dceaf2;
+        }
+
+        .container {
+            width: min(1050px, 88%);
+            margin: 38px auto 60px;
+        }
+
+        .section-heading {
+            margin-bottom: 22px;
+        }
+
+        .section-heading h2 {
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        .section-heading p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e1e8f0;
+            border-radius: 14px;
+            padding: 22px;
+            box-shadow: 0 8px 22px rgba(20, 45, 70, .05);
+            display: flex;
+            flex-direction: column;
+            min-height: 205px;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 28px rgba(20, 45, 70, .10);
+        }
+
+        .number {
+            color: #176b87;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 13px;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .card a {
+            color: #176b87;
+            font-weight: bold;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .student {
+            margin-top: 32px;
+            padding: 20px 22px;
+            background: #e7f1f5;
+            border-left: 4px solid #176b87;
+            border-radius: 8px;
+        }
+
+        .student strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .student span {
+            color: #526579;
+            font-size: 13px;
+        }
+
+        footer {
+            text-align: center;
+            color: #718096;
+            font-size: 12px;
+            padding: 22px;
+            border-top: 1px solid #e1e8f0;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 540px) {
+            .hero {
+                padding: 42px 6%;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                width: 88%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <span class="tag">WEB TECHNOLOGIES • WEEK 08</span>
+        <h1>JavaScript Lab Programs</h1>
+        <p>
+            A collection of Week 8 Web Technologies lab exercises covering
+            JavaScript variables, data types, operators and number-based programs.
+            Select a program below to view its output.
+        </p>
+    </header>
+
+    <main class="container">
+        <div class="section-heading">
+            <h2>Program List</h2>
+            <p>Choose any program to open its HTML file.</p>
+        </div>
+
+        <section class="grid">
+            <article class="card">
+                <span class="number">PROGRAM 01</span>
+                <h3>Variables & Data Types</h3>
+                <p>Displays student details and demonstrates JavaScript variable data types using typeof.</p>
+                <a href="JSVariablesdatatypes.html">Open program →</a>
+            </article>
+
+            <article class="card">
+                <span class="number">PROGRAM 02</span>
+                <h3>JavaScript Operators</h3>
+                <p>Demonstrates arithmetic, comparison and logical operators with sample values.</p>
+                <a href="JSOperators.html">Open program →</a>
+            </article>
+
+            <article class="card">
+                <span class="number">PROGRAM 03</span>
+                <h3>Even or Odd</h3>
+                <p>Checks whether the given number is even or odd using the modulus operator.</p>
+                <a href="even_or_odd.html">Open program →</a>
+            </article>
+
+            <article class="card">
+                <span class="number">PROGRAM 04</span>
+                <h3>Prime Number</h3>
+                <p>Checks whether a number is prime using a function and loop.</p>
+                <a href="prime_numbers.html">Open program →</a>
+            </article>
+
+            <article class="card">
+                <span class="number">PROGRAM 05</span>
+                <h3>Perfect Number</h3>
+                <p>Finds the sum of proper divisors and checks whether the number is perfect.</p>
+                <a href="perfect_number.html">Open program →</a>
+            </article>
+
+            <article class="card">
+                <span class="number">PROGRAM 06</span>
+                <h3>Armstrong Number</h3>
+                <p>Checks whether a number equals the sum of its digits raised to the number of digits.</p>
+                <a href="armstrong_number.html">Open program →</a>
+            </article>
+        </section>
+
+        <div class="student">
+            <strong>WT Lab • Week 8</strong>
+            <span>Prepared by Aravind | MCA | Roll No: 261FD01056</span>
+        </div>
+    </main>
+
+    <footer>
+        Web Technologies Lab — Week 8 | HTML & JavaScript
+    </footer>
+
+</body>
+</html>
